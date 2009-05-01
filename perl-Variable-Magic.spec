@@ -1,5 +1,5 @@
 %define module   Variable-Magic
-%define version    0.32
+%define version    0.34
 %define release    %mkrel 1
 
 Name:       perl-%{module}
