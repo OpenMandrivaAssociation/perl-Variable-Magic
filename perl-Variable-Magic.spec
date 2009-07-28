@@ -1,20 +1,21 @@
-%define module   Variable-Magic
-%define version    0.36
-%define release    %mkrel 1
+%define upstream_name    Variable-Magic
+%define upstream_version 0.36
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Associate magic to variables from Perl
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Variable/%{module}-%{version}.tar.gz
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Variable/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
 BuildRequires: perl(XSLoader)
 BuildRequires: perl-devel
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Magic is Perl way of enhancing objects. This mechanism let the user add
@@ -23,7 +24,7 @@ assignation or destruction) that can be applied to it. With this module,
 you can add your own magic to any variable without the pain of the C API.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -45,4 +46,3 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 %perl_vendorarch/Variable
 %perl_vendorarch/auto/Variable
-
