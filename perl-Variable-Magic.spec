@@ -18,8 +18,8 @@ BuildRequires: perl-devel
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
-Magic is Perl way of enhancing objects. This mechanism let the user add
-extra data to any variable and hook syntaxical operations (such as access,
+Magic is Perl's way of enhancing objects. This mechanism lets the user add
+extra data to any variable and hook syntactical operations (such as access,
 assignation or destruction) that can be applied to it. With this module,
 you can add your own magic to any variable without the pain of the C API.
 
