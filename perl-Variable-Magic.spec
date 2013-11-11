@@ -1,5 +1,5 @@
 %define upstream_name    Variable-Magic
-%define upstream_version 0.52
+%define upstream_version 0.53
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Associate magic to variables from Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Variable/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Variable/Variable-Magic-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Config)
@@ -139,4 +139,5 @@ make test
 
 * Mon Jan 05 2009 cpan2dist 0.26-1mdv
 - initial mdv release, generated with cpan2dist
+
 
