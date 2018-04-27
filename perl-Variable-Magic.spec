@@ -16,6 +16,7 @@ BuildRequires:	perl(Config)
 BuildRequires:	perl(Exporter)
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(XSLoader)
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 
 %description
