@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -30,13 +30,13 @@ you can add your own magic to any variable without the pain of the C API.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README Changes
