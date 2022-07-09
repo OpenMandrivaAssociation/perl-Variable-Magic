@@ -1,5 +1,9 @@
 %define upstream_name    Variable-Magic
 %define upstream_version 0.62
+%ifarch %{x86_64}
+# FIXME bug
+%global _debugsource_template %{nil}
+%endif
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
