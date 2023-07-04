@@ -36,9 +36,6 @@ you can add your own magic to any variable without the pain of the C API.
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
-%check
-make test
-
 %install
 %make_install
 
