@@ -12,7 +12,7 @@ Release:	10
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Associate magic to variables from Perl
-Url:		http://metacpan.org/pod/Variable::Magic
+Url:		https://metacpan.org/pod/Variable::Magic
 Source0:	http://www.cpan.org/modules/by-module/Variable/Variable-Magic-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Carp)
