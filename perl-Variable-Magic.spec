@@ -1,19 +1,14 @@
 %define upstream_name    Variable-Magic
-%define upstream_version 0.62
-%ifarch %{x86_64}
-# FIXME bug
-%global _debugsource_template %{nil}
-%endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	10
+Version:	0.64
+Release:	1
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Associate magic to variables from Perl
 Url:		https://metacpan.org/pod/Variable::Magic
-Source0:	http://www.cpan.org/modules/by-module/Variable/Variable-Magic-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Variable/Variable-Magic-%{version}.tar.gz
 
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Config)
@@ -30,7 +25,7 @@ assignation or destruction) that can be applied to it. With this module,
 you can add your own magic to any variable without the pain of the C API.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
