@@ -10,6 +10,7 @@ Summary:	Associate magic to variables from Perl
 Url:		https://metacpan.org/pod/Variable::Magic
 Source0:	http://www.cpan.org/modules/by-module/Variable/Variable-Magic-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Config)
 BuildRequires:	perl(Exporter)
