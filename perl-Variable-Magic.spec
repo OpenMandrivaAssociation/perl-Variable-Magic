@@ -1,8 +1,8 @@
 %define upstream_name    Variable-Magic
 
 Name:		perl-%{upstream_name}
-Version:	0.64
-Release:	2
+Version:	0.65
+Release:	1
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
